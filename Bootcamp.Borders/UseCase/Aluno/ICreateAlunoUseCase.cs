@@ -7,8 +7,7 @@ using System.Threading.Tasks;
 
 namespace Bootcamp.Borders.UseCase.Aluno
 {
-    public interface IGetAlunoUseCase : IUseCase<GetAlunoRequest, Entities.Aluno>
+    public interface ICreateAlunoUseCase : IUseCase<CreateAlunoRequest, Borders.Entities.Aluno>
     {
-
     }
 }

@@ -1,4 +1,5 @@
-﻿using Bootcamp.Borders.Repository.Aluno;
+﻿using Bootcamp.Borders.DTO.Aluno;
+using Bootcamp.Borders.Repository.Aluno;
 using Bootcamp.Borders.UseCase.Aluno;
 using System;
 using System.Collections.Generic;
@@ -15,7 +16,8 @@ namespace Bootcamp.UseCase.Aluno
         {
             this.alunoRepository = alunoRepository;
         }
-        public Borders.Entities.Aluno Execute()
+
+        public Borders.Entities.Aluno Execute(GetAlunoRequest request)
         {
             var alunos = alunoRepository.GetAll();
             return alunos.FirstOrDefault();

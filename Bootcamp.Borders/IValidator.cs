@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bootcamp.Borders.UseCase
+namespace Bootcamp.Borders
 {
-    public interface IUseCase<TRequest, TEntity>
+    public interface IValidator<TRequest>
     {
-        TEntity Execute(TRequest request);
+        void ValidateAndThrow(TRequest request);
     }
 }

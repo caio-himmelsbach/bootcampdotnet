@@ -10,5 +10,7 @@ namespace Bootcamp.Borders.Repository.Aluno
     public interface IAlunoRepository : IRepository<Entities.Aluno>
     {
         Borders.Entities.Aluno GetById(GetAlunoRequest request);
+        Borders.Entities.Aluno Create(Borders.Entities.Aluno request);
+
     }
 }

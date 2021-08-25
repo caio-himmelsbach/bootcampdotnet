@@ -9,11 +9,14 @@ namespace Bootcamp.Repository
 {
     public class BootcampDbContext : DbContext
     {
-        public BootcampDbContext()
+        public BootcampDbContext(DbContextOptions options) 
+            : base(options)
         {
 
         }
 
         public DbSet<Borders.Entities.Aluno> Alunos { get; set; }
+        public DbSet<Borders.Entities.Curso> Curso { get; set; }
+
     }
 }

@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bootcamp.Repository", "Bootcamp.Repository\Bootcamp.Repository.csproj", "{A2AA501D-F778-4360-994D-48EA9FE0966B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bootcamp.Repository", "Bootcamp.Repository\Bootcamp.Repository.csproj", "{A2AA501D-F778-4360-994D-48EA9FE0966B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bootcamp.API", "Bootcamp.API\Bootcamp.API.csproj", "{64348537-6BD6-45F4-99C6-2B927201EB1B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bootcamp.API", "Bootcamp.API\Bootcamp.API.csproj", "{64348537-6BD6-45F4-99C6-2B927201EB1B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bootcamp.UseCase", "Bootcamp.UseCase\Bootcamp.UseCase.csproj", "{15CBF43D-1D86-4188-A7AE-B27A4CFE2E69}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bootcamp.UseCase", "Bootcamp.UseCase\Bootcamp.UseCase.csproj", "{15CBF43D-1D86-4188-A7AE-B27A4CFE2E69}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bootcamp.Borders", "Bootcamp.Borders\Bootcamp.Borders.csproj", "{182B8847-1710-4C48-B769-5E4D1D7CE971}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bootcamp.Borders", "Bootcamp.Borders\Bootcamp.Borders.csproj", "{182B8847-1710-4C48-B769-5E4D1D7CE971}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bootcamp.Tests", "Bootcamp.Tests\Bootcamp.Tests.csproj", "{51E164FA-979A-4817-983B-4683BB9AB7BC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{182B8847-1710-4C48-B769-5E4D1D7CE971}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{182B8847-1710-4C48-B769-5E4D1D7CE971}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{182B8847-1710-4C48-B769-5E4D1D7CE971}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51E164FA-979A-4817-983B-4683BB9AB7BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51E164FA-979A-4817-983B-4683BB9AB7BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51E164FA-979A-4817-983B-4683BB9AB7BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51E164FA-979A-4817-983B-4683BB9AB7BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

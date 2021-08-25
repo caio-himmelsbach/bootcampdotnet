@@ -1,6 +1,7 @@
 ﻿using Bootcamp.Borders.DTO.Aluno;
 using Bootcamp.Borders.Entities;
 using Bootcamp.Borders.UseCase.Aluno;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,7 @@ using System.Threading.Tasks;
 namespace Bootcamp.API.Controllers
 {
     [ApiController]
+    [Authorize]
     [Route("[controller]")]
     public class AlunosController : Controller
     {
@@ -22,7 +24,13 @@ namespace Bootcamp.API.Controllers
         [HttpGet]
         public Aluno Get([FromQuery]GetAlunoRequest request)
         {
-            return getAlunoUseCase.Execute();
+            return getAlunoUseCase.Execute(request);
+        }
+
+        [HttpPost]
+        public Aluno Create([FromBody] GetAlunoRequest request)
+        {
+            return getAlunoUseCase.Execute(request);
         }
     }
 }

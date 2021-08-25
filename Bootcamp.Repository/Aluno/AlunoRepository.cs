@@ -17,6 +17,15 @@ namespace Bootcamp.Repository.Aluno
         {
             this.dbContext = dbContext as BootcampDbContext;
         }
+
+        public Borders.Entities.Aluno Create(Borders.Entities.Aluno aluno)
+        {
+            dbContext.Alunos.Add(aluno);
+            dbContext.SaveChanges();
+
+            return aluno;
+        }
+
         public IEnumerable<Borders.Entities.Aluno> GetAll()
         {
             return dbContext.Alunos.ToList();

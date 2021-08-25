@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bootcamp.Borders.UseCase
+namespace Bootcamp.Borders.Entities
 {
-    public interface IUseCase<TRequest, TEntity>
+    public class Curso
     {
-        TEntity Execute(TRequest request);
+        public int Id { get; set; }
+        public string Nome { get; set; }
     }
 }
